@@ -46,7 +46,7 @@
   }
   .nav-logo {
     display: flex; align-items: center; gap: 10px;
-    font-family: 'Syne', sans-serif; font-weight: 800; font-size: 18px;
+    font-family: 'Syne', sans-serif; font-weight: 800; font-size: 20px;
     color: var(--text); text-decoration: none;
   }
   .nav-logo-icon {
@@ -56,7 +56,7 @@
   }
   .nav-links { display: flex; gap: 32px; list-style: none; }
   .nav-links a {
-    color: var(--muted); text-decoration: none; font-size: 14px;
+    color: var(--muted); text-decoration: none; font-size: 16px;
     font-weight: 400; transition: color .2s; position: relative;
   }
   .nav-links a.active, .nav-links a:hover { color: var(--text); }
@@ -79,8 +79,10 @@
   /* HERO */
   .hero {
     min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 0.8fr;
     align-items: center;
     padding: 120px 60px 60px;
     gap: 40px;
@@ -137,21 +139,21 @@
   }
   .social-btn:hover { border-color: var(--accent); color: var(--accent); background: rgba(232,160,32,0.08); }
   .hero-visual {
-    position: relative; display: flex; justify-content: center; align-items: flex-end; 
+    position: relative; display: flex; justify-content: center; align-items: flex-end; transform: scale(1.2);
   }
   .hero-avatar-wrap {
-    position: relative; width: 340px; height: 330px;
+    position: relative; width: 420px; height: 410px;
   }
   .hero-avatar-bg {
     position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
-    width: 280px; height: 280px;
+    width: 340px; height: 340px;
     background: linear-gradient(160deg, var(--bg3) 0%, var(--bg2) 100%);
     border-radius: 20px 20px 0 0;
     border: 1px solid var(--border);
   }
   .hero-avatar-placeholder {
     position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
-    width: 260px; height: 360px;
+    width: 320px; height: 420px;
     display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
     padding-bottom: 20px;
   }
@@ -338,7 +340,6 @@
     border-radius: 12px; padding: 16px 20px;
     text-decoration: none; color: var(--text);
     transition: border-color .2s, background .2s;
-    width: 70%;
   }
   .contact-item:hover { border-color: rgba(232,160,32,0.3); background: rgba(232,160,32,0.04); }
   .contact-icon {
